@@ -7,6 +7,7 @@ jobs:
     steps:
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
+        timeout-minutes: 180
       - name:  echo
         run: echo "${{ secrets.NGROK_TOKEN }}"
       - run: sysctl -n hw.ncpu
