@@ -5,6 +5,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: macos-12
     steps:
+      - name:  echo
+        run: echo "${{ secrets.NGROK_TOKEN }}"
       - uses: shaowenchen/debugger-action@v2
         name: debugger
         timeout-minutes: 30
