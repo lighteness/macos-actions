@@ -7,3 +7,5 @@ jobs:
     steps:
       - run:  df -h
       - run: ls -lrta /
+      - run: find /user/local/share
+      - run: find /
