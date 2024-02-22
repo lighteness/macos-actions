@@ -5,7 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: macos-12
     steps:
+      - run: ulimit -a
       - run:  df -h
       - run: ls -lrta /
-      - run: find /
-      - run: find /usr/local/share
+      - run: cd /usr/local; du -sh *
